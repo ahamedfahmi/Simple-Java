@@ -7,6 +7,7 @@ public class App {
         float num1;
         float num2;
         char oper;
+        float answer = 0;
 
         //get 1st input 
         Scanner input1 = new Scanner(System.in);
@@ -32,6 +33,33 @@ public class App {
         num2 = input2.nextFloat();
 
         //calculations
+        switch (oper)
+        {
+            case '+' :
+                answer = num1 + num2;
+                break;
+            
+            case '-':
+                answer = num1 - num2;
+                break;
+
+            case '/':
+                answer = num1 / num2;
+                break;
+
+            case '*':
+                answer = num1 * num2;
+                break;
+
+            default:
+                System.out.println("Invalid Operator !!!");
+
+        }
+
+        //final output
+        System.out.println("************* ANSWER *************");
+        System.out.println("\t" + num1 + " " + oper+" "+ num2 + " = " + answer);
+        System.out.println("**********************************");
 
 
 
