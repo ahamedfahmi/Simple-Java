@@ -27,7 +27,11 @@ public class App {
         oper = operator.next().charAt(0);
 
         //get 2nd input
-        Scanner input2 = 
+        Scanner input2 = new Scanner(System.in);
+        System.out.print("Enter the Number 2 := ");
+        num2 = input2.nextFloat();
+
+        //calculations
 
 
 
