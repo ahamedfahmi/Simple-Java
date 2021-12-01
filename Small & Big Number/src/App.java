@@ -13,7 +13,7 @@ public class App {
         System.out.print("Enter Number 2 := ");
         int num2 = input2.nextInt();
 
-        //conditions
+        //conditions & Outputs
         if (num1 > num2)
         {
             System.out.println(num1 + " is bigger than " + num2);
