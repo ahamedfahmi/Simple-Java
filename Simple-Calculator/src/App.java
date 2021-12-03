@@ -36,7 +36,7 @@ public class App {
         switch (oper)
         {
             case '+' :
-                answer = num1 + num2;
+                answer = addition(num1, num2);
                 break;
             
             case '-':
@@ -60,13 +60,10 @@ public class App {
         System.out.println("************* ANSWER *************");
         System.out.println("\t" + num1 + " " + oper+" "+ num2 + " = " + answer);
         System.out.println("**********************************");
+    }
 
-
-
-        
-
-
-
-
+    public static float addition(float num1 , float num2)
+    {
+        return num1 + num2;
     }
 }
