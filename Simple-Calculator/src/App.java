@@ -40,15 +40,15 @@ public class App {
                 break;
             
             case '-':
-                answer = num1 - num2;
+                answer = substraction(num1, num2);
                 break;
 
             case '/':
-                answer = num1 / num2;
+                answer = divide(num1, num2);
                 break;
 
             case '*':
-                answer = num1 * num2;
+                answer = multiply(num1, num2);
                 break;
 
             default:
@@ -62,8 +62,25 @@ public class App {
         System.out.println("**********************************");
     }
 
+    //using methods for calculation
     public static float addition(float num1 , float num2)
     {
         return num1 + num2;
     }
+
+    public static float substraction (float num1 ,float num2)
+    {
+        return num1 - num2;
+    }
+
+    public static float divide (float num1 , float num2)
+    {
+        return num1 * num2;
+    }
+
+    public static float multiply (float num1 , float num2)
+    {
+        return num1 * num2;
+    }
+
 }
