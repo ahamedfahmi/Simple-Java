@@ -13,6 +13,13 @@ public class App {
         System.out.print("Enter Number 2 := ");
         int num2 = input2.nextInt();
 
+        //calling method for output
+        calculation(num1, num2);
+
+    }
+
+    public static void calculation(int num1 , int num2)
+    {
         //conditions & Outputs
         if (num1 > num2)
         {
@@ -26,10 +33,5 @@ public class App {
         {
             System.out.println(num2 + " is bigger than " + num1);
         }
-        
-
-
-
-
     }
 }
