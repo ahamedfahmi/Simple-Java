@@ -8,10 +8,16 @@ public class App {
         //declare variables
         float mark;
         char result = '\0';
+        String name;
+
+        //get user name
+        Scanner uname = new Scanner(System.in);
+        System.out.print("Enter Your Name := ");
+        name = uname.nextLine();
 
         //get user input
         Scanner marks = new Scanner(System.in);
-        System.out.print("Enter the marks");
+        System.out.print("Enter the marks := ");
         mark = marks.nextFloat();
 
         //Grading conditions 
@@ -40,7 +46,8 @@ public class App {
             }
 
         //display output
-        System.out.println("Result for " + mark + " is = " + result);
+        System.out.println(name + "'s Mark is " + mark);
+        System.out.println(name + "'s Result is " + result);
 
         }
         else 
