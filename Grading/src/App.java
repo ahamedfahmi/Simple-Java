@@ -39,13 +39,13 @@ public class App {
                 result = 'F';
             }
 
+        //display output
+        System.out.println("Result for " + mark + " is = " + result);
+
         }
         else 
         {
             System.out.println("Invalid Marks Try Again !!!");
         }
-
-        //display output
-        System.out.println("Result for " + mark + " is = " + result);
     }
 }
