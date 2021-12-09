@@ -21,6 +21,9 @@ public class App {
 
         //calling method
         grading(name , mark);
+
+        //decoration :)
+        System.out.println("\n"+"******* Thank you *******");
     }
 
     //declare method
