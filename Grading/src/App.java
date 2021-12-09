@@ -54,5 +54,8 @@ public class App {
         {
             System.out.println("Invalid Marks Try Again !!!");
         }
+
+        //decoration :)
+        System.out.println("\n"+"******* Thank you *******");
     }
 }
