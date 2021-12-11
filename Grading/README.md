@@ -1,0 +1,1 @@
+This is an Simple grading method program :)
