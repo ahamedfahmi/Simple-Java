@@ -4,11 +4,14 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
                 //declare variables
-                String Secrect_Word ;
+                String secretWord ;
                 String user_input;
+                int guessCount = 0;
+                int guessLimit = 3;
+                boolean remainingGuess = false;
         
                 //set Secrect Word (SW)
-                Secrect_Word = "Java";
+                secretWord = "Java";
         
                 //Clue prompt
                 System.out.println("******* Here Your Clues *******");
@@ -22,8 +25,7 @@ public class App {
                 user_input = input.nextLine();
                 
                 //conditions and loops
-
-                while (!user_input.equals(Secrect_Word))
+                while (!user_input.equals(secretWord))
                 {
                     System.out.println("Not Correct :(");
                     System.out.print("Guess the word := ");
