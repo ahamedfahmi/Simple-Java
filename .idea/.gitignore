@@ -10,4 +10,7 @@
 #ignore some unwanted dir
 /out
 /.vscode
-/.idea
+/Grading/.vscode
+/Guessing Game/.vscode
+/Simple-Calculator/.vscode
+/Small & Big Number/.vscode
