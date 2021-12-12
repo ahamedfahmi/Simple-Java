@@ -10,7 +10,7 @@ public class App {
                 int guessLimit = 3;
                 boolean remainingGuess = false;
         
-                //set Secrect Word (SW)
+                //set Secret Word (SW)
                 secretWord = "Java";
         
                 //Clue prompt
@@ -41,7 +41,14 @@ public class App {
                     }
                 }
 
-                System.out.println("Yes , Your Correct :)");
+                if (remainingGuess)
+                {
+                    System.out.println("Sorry your Guess Limit is over :(");
+                }
+                else
+                {
+                    System.out.println("Yes , Your Correct :)");
+                }
 
                 
     }
