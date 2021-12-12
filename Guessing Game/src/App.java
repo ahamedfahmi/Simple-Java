@@ -25,12 +25,22 @@ public class App {
                 user_input = input.nextLine();
                 
                 //conditions and loops
-                while (!user_input.equals(secretWord))
+
+                while (!user_input.equals(secretWord) && !remainingGuess)
                 {
-                    System.out.println("Not Correct :(");
-                    System.out.print("Guess the word := ");
-                    user_input = input.nextLine();
+                    if (guessCount < guessLimit) {
+                        System.out.println("Not Correct :(");
+                        System.out.print("Guess the word := ");
+                        user_input = input.nextLine();
+
+                        guessCount ++; // increment of guessCount
+                    }
+                    else{
+                        remainingGuess = true;
+                        break;
+                    }
                 }
+
                 System.out.println("Yes , Your Correct :)");
 
                 
